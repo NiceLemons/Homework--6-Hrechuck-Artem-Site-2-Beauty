@@ -1,0 +1,53 @@
+*{
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+body {
+	margin: 0;
+}
+/*Float Расчёт*/
+.col1 {
+	width: 8.33%;
+}
+.col2 {
+	width: 16.66%;
+}
+col3 {
+	width: 25%;
+}
+.col4 {
+	width: 33.33%;
+}
+.col5 {
+	width: 41.67%;
+}
+.col6 {
+	width: 50%;
+}
+.col7 {
+	width: 58.33%;
+}
+.col8 {
+	width: 66.67%;
+}
+.col9 {
+	width: 75%;
+}
+.col10 {
+	width: 83.33%;
+}
+.col11 {
+	width: 91.67%;
+}
+.col12 {
+	width: 100%;
+}
+.col {
+	border: 1px solid red;
+	padding: 0 15px;
+	float: left;
+}
