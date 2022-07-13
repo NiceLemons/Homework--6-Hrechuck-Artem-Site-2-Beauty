@@ -230,6 +230,7 @@ h2 {
 	padding-top: 70px;
     display: flex;
     column-gap: 2.6%;
+	padding-bottom: 100px;
 }
 .left {
     flex: 1 1 48%;
