@@ -8,6 +8,10 @@
 		<link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/swiper/swiper-bundle.min.css"
+	  />
 		<title>Beauty Site</title>
 	</head>
 	<body>
@@ -334,10 +338,10 @@
 				</div>
 			</div>
 			<div class="main_items fix">
-				<div class="container">
+				<div class="container ">
 					<h2 class="h2_special_offer">Вы недавно смотрели</h2>
-					<div class="items_card">
-						<div class="card">
+					<div class="items_card swiper mySwiper">
+						<div class="card swiper-slide">
 							<div class="card_image">
 								<img src="images/chair.png" alt="Chair">
 							</div>
@@ -349,7 +353,7 @@
 								<a class="card_a" href="#">Купить</a>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card swiper-slide">
 							<div class="card_image">
 								<img src="images/chair.png" alt="Chair">
 							</div>
@@ -361,7 +365,7 @@
 								<a class="card_a" href="#">Купить</a>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card swiper-slide">
 							<div class="card_image">
 								<img src="images/chair.png" alt="Chair">
 							</div>
@@ -373,7 +377,7 @@
 								<a class="card_a" href="#">Купить</a>
 							</div>
 						</div>
-						<div class="card">
+						<div class="card swiper-slide">
 							<div class="card_image">
 								<img src="images/chair.png" alt="Chair">
 							</div>
@@ -469,6 +473,7 @@
 			<a href="#"><span class="footer_span">Политика конфиденциальности</span></a>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	</body>
 </html>
 <script>
@@ -500,3 +505,14 @@
 	}
 </script>
 <!-- ДАААААААА, я нашел рабочий код, УРАААААА -->
+<script>
+	var swiper = new Swiper(".mySwiper", {
+	  slidesPerView: 4,
+	  spaceBetween: 30,
+	  centeredSlides: true,
+	  pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	  },
+	});
+  </script>
