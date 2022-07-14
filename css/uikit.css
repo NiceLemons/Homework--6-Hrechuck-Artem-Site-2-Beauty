@@ -2748,7 +2748,7 @@ select.uk-form-width-xsmall {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-card-body > .uk-nav-default {
-    margin-left: -40px;
+    margin-left: -41px;
     margin-right: -40px;
   }
   .uk-card-body > .uk-nav-default:only-child {
@@ -4607,10 +4607,10 @@ select.uk-form-width-xsmall {
 @media (min-width: 1200px) {
   /* Horizontal */
   .uk-grid {
-    margin-left: -40px;
+    margin-left: -41px;
   }
   .uk-grid > * {
-    padding-left: 40px;
+    padding-left: 39px;
   }
   /* Vertical */
   .uk-grid + .uk-grid,
@@ -4665,7 +4665,7 @@ select.uk-form-width-xsmall {
 /* Horizontal */
 .uk-grid-large,
 .uk-grid-column-large {
-  margin-left: -40px;
+  margin-left: -41px;
 }
 .uk-grid-large > *,
 .uk-grid-column-large > * {
@@ -8123,7 +8123,7 @@ iframe[data-uk-cover] {
 .uk-object-scale-down {
   object-fit: scale-down;
 }
-/* 
+/*
  * Position
  */
 .uk-object-top-left {

@@ -262,7 +262,11 @@
 										<h3 class="card_pink_h3">Получайте бонусы и подарки</h3>
 										<p class="card_pink_p">Каждый месяц разыгрываем
 											10 000 гривен для наших клиентов</p>
-										<input class="card_pink_input type="email" placeholder="Введите e-mail">
+										<form>
+											<input id="nums" class="card_pink_input type="text" placeholder="Passport">
+											<button type="submit" id="btn">Submit</button>
+										</form>
+
 									</div>
 									<div class="card_pink-wrapper-left-image">
 										<img src="images/letter.png" alt="letter">
@@ -277,7 +281,10 @@
 										Более 300 магазинов
 										по всей Украине
 									</p>
-									<a class="card_pink_button" href="#">Карта магазинов</a>
+									<form action="">
+										<input id="numsOLD" class="card_pink_input type="text" placeholder="Passport old">
+										<button type="submit" id="btnOLD">Submit</button>
+									</form>
 								</div>
 								<div class="card_pink-wrapper-rigth-image">
 									<img class="card_image-right" src="images/car.png" alt="Car">
@@ -465,3 +472,31 @@
 	</body>
 </html>
 <script>
+	const nums = document.querySelector('#nums');
+	const btn = document.querySelector('#btn');
+
+	btn.onclick = ()=>{
+
+		const inputValue = nums.value;
+		const patt = /^[0-9]{10}/g;
+		const results = inputValue.match(patt);
+		console.log(results);
+		const valNum = results != null;
+		console.log(valNum);
+	}
+</script>
+<script>
+	const numsOLD = document.querySelector('#numsOLD');
+	const btnOLD = document.querySelector('#btnOLD');
+
+	btnOLD.onclick = ()=>{
+
+		const inputValue = numsOLD.value;
+		const patt = /(^[A-Za-z]{2})+[0-9]{6}/g;
+		const results = inputValue.match(patt);
+		console.log(results);
+		const valNum = results != null;
+		console.log(valNum);
+	}
+</script>
+<!-- ДАААААААА, я нашел рабочий код, УРАААААА -->
