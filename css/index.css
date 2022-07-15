@@ -114,6 +114,9 @@ body {
     right: 5px;
     left: 4px;
 }
+.swiper-pagination {
+    bottom: 0 !important;
+}
 .main_border {
 	background-image: url(../images/main_image.png);
 	height: 604px;
@@ -233,6 +236,9 @@ h2 {
 	display: inline-block;
 	padding: 4px 0px 0px 0px;
 	background-color: #F13C6E;
+}
+.js-image-zoom__zoomed-image {
+	z-index: 100;
 }
 .pink_cards {
 	padding-top: 70px;
